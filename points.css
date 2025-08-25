@@ -1,0 +1,64 @@
+
+  :root {
+  --color-primary :#2E86DE;
+
+  --color-text: #222;
+  --color-text-mark: #2E86DE;
+  
+  --color-background: #fff;
+  --color-background-dark: #1C1C1C;
+
+  --font-size-text-title: 3.5em;
+  --font-size-text-caption: 2.5rem;
+  --font-size-paragraph: 3rem
+
+  --border-radius: 50px;
+
+  --section-margin: 40px;
+  --padding: 13px
+
+}
+
+/* points */
+
+ .table-points { 
+    color: #fff !important;
+   
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    margin-top: 60px;
+    width: 100%;
+    height: 130px;
+    border-radius: 100px;
+ }
+
+.section-table-points {
+    padding: 0px 100px;
+    margin-top: -20px;
+    margin-bottom: var(--section-margin);
+}
+
+.points {
+    h1 {
+        font-size: var(--font-size-text-caption);
+        animation: blinks 1.3s infinite;
+        color: var(--color-primary);
+        font-weight: 800;
+    }   
+    
+    p {
+        color: var(--color-background-dark);
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .table-points {
+        margin-top: 400px;
+        flex-direction: column !important;
+        gap: 60px;
+        box-shadow: none !important;
+    }
+}
